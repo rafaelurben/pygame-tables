@@ -1,5 +1,5 @@
 """
-Copyright 2020, Rafael Urben, rafaelurben@gmail.com, All rights reserved.
+Copyright 2020, Rafael Urben, https://github.com/rafaelurben, All rights reserved.
 
 Borrowed from https://github.com/rafaelurben/pygame-tables under the MIT license.
 """
@@ -15,12 +15,14 @@ pygame.font.init()
 # Utility Functions
 
 def to_width(string, length, align=False):
-    '''Modify a string to match the given length
+    '''
+    Modify a string to match the given length
     
     :param string: The string to modify
     :param length: The final length
     :param align: Align string left (False) or right (True)
     '''
+
     string = str(string)
     if len(string) > length:
         return string[:length-2]+".."
